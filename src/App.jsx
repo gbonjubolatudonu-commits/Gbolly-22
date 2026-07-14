@@ -6,25 +6,25 @@ import Contentimg from './Components/Contentimg'
 import Login from './Components/Login'
 import Register from './Components/Register'
 import Hotel from './Components/Hotel'
-// import { AuthProvider, useAuth } from './lib/context'
+import { AuthProvider, useAuth } from './lib/context'
 
 
-// const PrivateRoute =({Children}) =>{
-//   const {user, loading} = useAuth();
+const PrivateRoute =({Children}) =>{
+  const {user, loading} = useAuth();
 
-//   if (loading){
-//     return
-//   }
-//   if(!user) {
-//     return <Navigate to= '/login' replace />
-//   }
-//   return Children
-// }
+  if (loading){
+    return
+  }
+  if(!user) {
+    return <Navigate to= '/login' replace />
+  }
+  return Children
+}
 
 function App() {
   return (
     <>
-    {/* <AuthProvider > */}
+    <AuthProvider >
       <Routes>
         <Route path='/' element={<><Header /><Contentimg /></>} />
         <Route path='/Package' element={<Package />} />
@@ -33,7 +33,7 @@ function App() {
         <Route path='/Register' element={<Register />} />
         <Route path='/Content' element={<><Header /><Contentimg /></>} />
       </Routes>
-    {/* </AuthProvider> */}
+    </AuthProvider>
     </>
   )
 }

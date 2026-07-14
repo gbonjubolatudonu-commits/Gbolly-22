@@ -76,12 +76,12 @@ function Contentimg() {
              </div>
            </div>
    
-              <footer className=' bg-orange-500 py-4 '>
+              <footer className=' bg-blue-950 py-4 '>
                 <div>
 
-                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between items-center space-x-10 space-y-10 mr-5'>
+                  <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between items-center space-x-10 space-y-10 mr-5 text-white'>
                     {/* justify-between items-center space-x-10 md:mb-7 mb-10 */}
-                      <div className='ml-6 mt-6'>
+                      <div className='ml-6 mt-6 text-white'>
                         <h1 className='text-3xl '>Information</h1>
                         <p className='hover:text-orange-300 cursor-progress'>FAQs</p> 
                         <p className='hover:text-orange-300 cursor-progress'>Terms & Condition</p>
