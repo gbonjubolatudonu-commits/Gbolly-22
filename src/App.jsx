@@ -33,7 +33,7 @@ function App() {
         <Route path='/Register' element={<Register />} />
         <Route path='/Content' element={<><Header /><Contentimg /></>} />
       </Routes>
-    </AuthProvider>
+    </AuthProvider> 
     </>
   )
 }
